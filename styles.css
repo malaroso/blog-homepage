@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;800&family=Open+Sans:wght@300;500;700&display=swap');
+
+:root{
+    --color-primary: #7380ec;
+    --color-danger: #f17782;
+    --color-success: #41f1b6;
+    --color-warning: #ffbb55;
+    --color-white: #fff;
+    --color-info-dark: #7d8da1;
+    --color-info-light: #dce1eb;
+    --color-primary-variant: #111e88;
+    --color-dark: #363949;
+    --color-light: rgba(132,139,200, 0.18);
+    --color-primary-variant: #677483;
+    --color-background: #DADDE2;
+
+    --color-paymentOK : green;
+    --color-paymentWait : rgb(245, 139, 0);
+    --color-paymentCancel : red;
+
+    --color-kargoyolda: #006AED;
+    --color-kargohazirlaniyor: #3E4A3D;
+
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+
+    --card-padding: 1.8rem;
+    --padding-1-2: 1.2rem;
+    --padding-1: 1rem;
+
+    --box-shadow: 0 2rem 3rem var(var(--color-light));
+
+    --fontsmall: 0.9rem;
+    --fontmed: 1.2rem;
+    --fontshigh: 1.5rem;
+    --fontsmax: 1.8rem;
+    --fontsultra: 2.1rem;
+
+    --ebgaramont: 'EB Garamond', serif;
+    --poppins: 'Open Sans', sans-serif;
+  
+}
+
+.dark-theme-variables{
+    --color-background: #181a1e;
+    --color-white: #202528;
+    --color-dark: #edeffd;
+    --color-dark-variant: #a3bdcc;
+    --color-light: rgba(0,0,0,0.4);
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+
+body{
+    font-family: poppins, sans-serif;
+    background: var(--color-background) !important;
+
+}
+
+.row>* {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+
+}
+.clear25{
+    width: 100%;
+    height: 1.2rem;
+}
+
+.clear50{
+    width: 100%;
+    height: 1.8rem;
+}
+.clear75{
+    width: 100%;
+    height: 3.8rem;
+}
+
+.clear100{
+    width: 100%;
+    height: 4.8rem;
+}
+
+a{
+    color: var(--color-dark) !important;
+    text-decoration: none !important;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+h1{
+    font-weight: 800 !important;
+    font-size: 1.8rem !important;
+    color: var(--color-dark) !important;
+}
+h2{
+    color: var(--color-dark) !important;
+    font-size: 1.4rem !important;
+}
+h3{
+    color: var(--color-dark) !important;
+    font-size: 0.88rem !important;
+}
+
+h4{
+   
+    font-size: 0.8rem !important;
+}
+
+h5{
+   
+    font-size: 0.77rem;
+}
+
+small{
+    font-size: 0.75rem;
+}
+
+.malanav{
+    width: 100%;
+    height: auto;
+    background: #06002E;
+    color: var(--color-info-light);
+    padding: var(--card-padding);
+    font-family: var(--poppins);
+    font-size: var(--fontmed);
+}
+
+.logo{
+    width: 108px;
+    position: absolute;
+    top: 0;
+}
+
+.malanav ul li a{
+    color: var(--color-info-light) !important;
+}
+
+.malacontainer{
+    padding: var(--card-padding);
+    height: 100vh;
+}
+
+.maincard{
+    border-radius: var(--border-radius-2);
+    background: var(--color-white);
+    margin-top: -2.4rem;
+    width: 100%;
+    height: auto;
+}
+
+.main-text-head{
+    font-family: var(--ebgaramont);
+    font-size: var(--fontsultra);
+    font-weight: 500;
+    text-align: center;
+}
+
+.article-area{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.uk-article{
+    flex-grow: 3;
+    padding: 1rem;
+    width: 300px;
+}
+
+.contact-form{
+    padding: var(--padding-1-2);
+    margin: 1rem;
+    font-family: var(--poppins);
+    border-radius: var(--border-radius-1);
+    box-shadow: var(--box-shadow);
+    background: var(--color-light);
+}
+
+.mala{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mala-img{
+    height: 40vh;
+    flex-grow: 1;
+}
+
+.mala img:hover{
+    border: 10px solid white;
+    transition: 0.5s;
+}
+
+.mala .mala-img img{
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+.bx{
+    font-size: 35px;
+}
+
+.malasendbuton{
+    width: 96px;
+    border-radius: var(--border-radius-1);
+    font-size: var(--fontsmall);
+    margin: 0 auto;
+    font-family: var(--ebgaramont);
+    padding: 0.4rem 3rem;
+    color: var(--color-info-light) !important;
+    background: #181a1e;
+    font-weight: 500;
+    
+}
+
+
+.ek-mala-btn{
+    border-radius: var(--border-radius-1);
+    font-size: var(--fontmed);
+    margin: 0 auto;
+    font-family: var(--ebgaramont);
+    padding: 0.1rem 3rem;
+    color: white !important;
+    background: #181a1e;
+    font-weight: 500;
+
+}
+
+.etsy{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.etsy .etsy-product{
+    width: 280px;
+}
+
+.etsy .etsy-product img{
+    width: 300px;
+    margin-bottom: 1rem;
+}
